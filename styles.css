@@ -866,7 +866,15 @@ header.scrolled {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+}
+
+#math-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .math-solver-result {
@@ -1449,3 +1457,103 @@ footer {
     text-align: center;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  
+  section {
+    padding: 5rem 0;
+  }
+  
+  .hero {
+    padding-top: 9rem;
+    padding-bottom: 4rem;
+  }
+  
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  
+  .hero-desc {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-stats {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .stat-item h3 {
+    font-size: 1.5rem;
+  }
+  
+  .math-board {
+    width: 290px;
+    height: 290px;
+    margin-top: 1rem;
+  }
+  
+  .math-center-svg {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .floating-math-symbol {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 10px;
+  }
+  
+  .symbol-1 { top: 5%; left: 8%; }
+  .symbol-2 { top: 15%; right: 5%; }
+  .symbol-3 { bottom: 20%; left: 2%; }
+  .symbol-4 { bottom: 10%; right: 10%; }
+  
+  .tab-btn {
+    flex: 1 1 100%;
+    padding: 0.6rem 1rem;
+  }
+  
+  .standards-visual-wrapper {
+    height: 280px;
+    padding: 1.5rem;
+  }
+  
+  .playground-visualizer {
+    height: 280px;
+  }
+  
+  .floating-contact {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    gap: 0.75rem;
+  }
+  
+  .float-btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .float-btn svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .faq-question {
+    padding: 1.25rem 1.5rem;
+    font-size: 1.05rem;
+  }
+  
+  .faq-answer-inner {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+  
+  .contact-form-panel {
+    border-radius: 20px;
+  }
+}
+
